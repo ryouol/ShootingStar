@@ -12,7 +12,7 @@ const Star: React.FC<StarProps> = ({ width, height }) => {
     resetStar();
     const interval = setInterval(() => {
       resetStar();
-    }, 3000); // shooting star duration
+    }, 4000); // Reduce star frequency by increasing duration
     return () => clearInterval(interval);
   }, []);
 
@@ -20,7 +20,7 @@ const Star: React.FC<StarProps> = ({ width, height }) => {
     setPosition({
       x: Math.random() * width,
       y: Math.random() * height,
-      delay: Math.random() * 5,
+      delay: Math.random() * 8, // Increase delay for fewer stars at once
     });
   };
 

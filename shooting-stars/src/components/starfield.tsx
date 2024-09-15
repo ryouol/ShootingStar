@@ -2,7 +2,7 @@ import React from 'react';
 import Star from './star';
 
 const StarField: React.FC = () => {
-  const numStars = 20; // Adjust number of stars
+  const numStars = 10; // Fewer stars
   const width = window.innerWidth;
   const height = window.innerHeight;
 

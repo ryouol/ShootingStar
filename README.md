@@ -8,3 +8,7 @@ shooting-stars/
 │   ├── App.tsx
 │   ├── index.tsx
 ├── package.json
+
+
+2 Components
+- 

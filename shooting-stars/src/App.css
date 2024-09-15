@@ -1,9 +1,10 @@
-/* App.css */
 .App {
   height: 100vh;
   background-color: black;
   overflow: hidden;
   position: relative;
+  background-image: radial-gradient(circle, transparent 1px, rgb(5, 3, 13) 1px),
+                 
 }
 
 .star-field {
@@ -16,20 +17,26 @@
 
 .star {
   position: absolute;
-  width: 2px;
-  height: 100px;
-  background-color: white;
+  width: 2px; /*star size */
+  height: 2px;
+  border-radius: 50%;
+  background-color: rgb(160, 23, 114);
   opacity: 0;
-  animation: shoot 2s ease-in-out infinite;
+  animation: shoot 4s ease-in-out infinite;
+  box-shadow: 0px 0px 5px 1.5px rgba(255, 255, 255, 0.5);
+
 }
 
 @keyframes shoot {
   0% {
-    transform: translateX(0) translateY(0) rotate(45deg);
+    transform: translateX(0) translateY(0);
     opacity: 1;
   }
+  70% {
+    opacity: 0.8; /* Keep star visible for a longer duration */
+  }
   100% {
-    transform: translateX(100vw) translateY(100vh) rotate(45deg);
+    transform: translateX(100vw) translateY(50vh); /* Star moves diagonally with a longer trail */
     opacity: 0;
   }
 }
