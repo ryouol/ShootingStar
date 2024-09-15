@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import StarField from './components/StarField';
+import StarField from './components/starfield';
 
 const App: React.FC = () => {
   return (
